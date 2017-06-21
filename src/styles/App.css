@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.App {
+  text-align: center; }
+
+.wrapper {
+  padding: 0% 15%; }
+
+*:focus {
+  outline: 0; }
+
+.header {
+  height: auto;
+  background: #00B2F3; }
+  .header img {
+    max-width: 30%;
+    margin: 10px 0px; }
+  .header .links {
+    padding-bottom: 10px; }
+    .header .links a {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      padding: 10px 10px;
+      text-decoration: none;
+      font-weight: lighter; }
+      .header .links a:hover {
+        text-decoration: underline; }
+
+.term {
+  text-align: left;
+  padding: 10px 0px; }
+  .term select {
+    color: #00B2F3;
+    background: #fff;
+    margin: 10px 0px;
+    border: 0px;
+    font-size: large; }
+
+hr {
+  background-color: #00B2F3;
+  border: none;
+  height: 1px;
+  margin-top: 3px; }
+
+.top {
+  text-align: left;
+  display: block; }
+  .top .subjects, .top .courses {
+    float: left;
+    width: 47.5%; }
+  .top .subjects {
+    padding-right: 5%; }
+  .top .icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 7px; }
+  .top .search {
+    color: #00B2F3;
+    border: 1px solid #00B2F3;
+    border-radius: 10px;
+    width: 97.5%;
+    height: 25px;
+    margin-bottom: 10px;
+    padding-left: 10px; }
+  .top ::-webkit-input-placeholder {
+    color: #00B2F3; }
+  .top :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #00B2F3;
+    opacity: 1; }
+  .top ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #00B2F3;
+    opacity: 1; }
+  .top :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #00B2F3; }
+  .top .head {
+    color: #265C82;
+    font-weight: lighter; }
+  .top .body > select > option {
+    padding: 3px 5px;
+    cursor: default; }
+  .top .body > select > option:checked {
+    box-shadow: 0 0 10px 100px #00B2F3 inset; }
+  .top .body > select {
+    width: 100%;
+    color: #00B2F3;
+    border: 1px solid #00B2F3;
+    border-radius: 5px; }
+
+.bottom {
+  text-align: left;
+  float: left;
+  width: 100%;
+  margin-bottom: 30px; }
+  .bottom .title {
+    margin-top: 1em;
+    font-size: x-large; }
+  .bottom .prereqs {
+    font-size: small; }
+  .bottom .title, .bottom .prereqs {
+    font-weight: lighter;
+    color: #265C82; }
+  .bottom .overview {
+    margin-top: 1em;
+    border: 1px solid #00B2F3;
+    border-radius: 5px; }
+  .bottom .body {
+    height: 200px; }
+  .bottom .foot {
+    height: 300px;
+    position: relative; }
+  .bottom .labels {
+    float: left;
+    width: 100%;
+    padding: 20px 0px 15px 0px; }
+  .bottom .labels > div, .bottom .data > div {
+    float: left;
+    text-decoration: none;
+    width: 20%;
+    text-align: center;
+    color: #265C82; }
+  .bottom .labels > div {
+    font-weight: 600;
+    font-size: small; }
+  .bottom .data > div {
+    font-weight: lighter;
+    font-size: smaller;
+    padding: 0px 0px 10px 0px; }
+  .bottom .bar {
+    fill: #00B2F3;
+    /*width: px;*/ }
+  .bottom .bar:hover {
+    fill: #265C82; }
+  .bottom .axis {
+    font: 10px sans-serif; }
+  .bottom .axis path,
+  .bottom .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges; }
+  .bottom #sections {
+    border: 1px solid #00B2F3;
+    border-radius: 5px;
+    width: 200px;
+    height: 75px;
+    padding: 10px 10px;
+    color: #00B2F3;
+    left: calc(85% - 200px);
+    top: 20%;
+    position: absolute; }
+  .bottom button {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #00B2F3;
+    border-radius: 10px;
+    color: #33A2FF;
+    font-size: 14px;
+    width: 100px;
+    height: 40px;
+    top: 60%;
+    position: absolute; }
+  .bottom button:hover {
+    background-color: #f5f7f9; }
+  .bottom #btn_scan {
+    left: calc(85% - 200px); }
+  .bottom #btn_clear {
+    left: calc(85% - 100px + 20px); }
+  .bottom .leftFoot {
+    /*float: left;*/
+    display: block; }
+  .bottom .rightFoot {
+    display: block;
+    float: left; }
+
+/* LOADING */
+.loader {
+  border: 10px solid black;
+  /* Light grey */
+  border-top: 10px solid #33A2FF;
+  /* Blue */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  /* TO CENTER IT */
+  margin-top: -50px;
+  /* half image height */
+  margin-left: -50px;
+  /* half image width */
+  position: fixed;
+  /* or absolute */
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  animation: spin 1.5s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=App.css.map */
