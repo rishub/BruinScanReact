@@ -131,6 +131,10 @@ hr {
     font-weight: lighter;
     font-size: smaller;
     padding: 0px 0px 10px 0px; }
+  .bottom .graph, .bottom svg {
+    margin-bottom: 10px;
+    /*padding: 10px 10px;*/
+    /*margin: 10px 10px;*/ }
   .bottom .bar {
     fill: #00B2F3;
     /*width: px;*/ }
@@ -150,9 +154,10 @@ hr {
     height: 75px;
     padding: 10px 10px;
     color: #00B2F3;
-    left: calc(85% - 200px);
+    float: left;
+    /*left: calc(85% - 200px);
     top: 20%;
-    position: absolute; }
+    position: absolute;*/ }
   .bottom button {
     cursor: pointer;
     background-color: white;
@@ -162,20 +167,25 @@ hr {
     font-size: 14px;
     width: 100px;
     height: 40px;
-    top: 60%;
-    position: absolute; }
+    /*top: 60%;
+    position: absolute;*/ }
   .bottom button:hover {
     background-color: #f5f7f9; }
   .bottom #btn_scan {
-    left: calc(85% - 200px); }
+    /*left: calc(85% - 200px);*/ }
   .bottom #btn_clear {
-    left: calc(85% - 100px + 20px); }
+    /*left: calc(85% - 100px + 20px);*/ }
   .bottom .leftFoot {
-    /*float: left;*/
-    display: block; }
-  .bottom .rightFoot {
-    display: block;
+    width: 60%;
     float: left; }
+  .bottom .rightFoot {
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin-top: 5em;
+    /*top: 20%;
+    left: 60%;
+    position: absolute;*/ }
 
 /* LOADING */
 .loader {
@@ -204,4 +214,4 @@ hr {
   100% {
     transform: rotate(360deg); } }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=app.css.map */

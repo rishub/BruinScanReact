@@ -83,7 +83,7 @@ class Bottom extends Component {
 
 			<hr />
 
-			{/*<div className="foot">*/}
+			<div className="foot">
 
 				<div className="leftFoot">
 					<Graph />
@@ -107,7 +107,7 @@ class Bottom extends Component {
 					</a>
 				</form>*/}
 
-			{/*</div>*/}
+			</div>
 
 		</div>
 

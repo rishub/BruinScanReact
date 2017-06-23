@@ -44,7 +44,7 @@ class Graph extends Component {
   render() {
     return (
         <div>
-            <div style={{width: '50%'}}> 
+            <div> 
                 <BarChart 
                   width={this.state.width}
                   height={300}
